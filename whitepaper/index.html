@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="turbo-cache-control" content="no-cache">
+
+    <!-- Primary Meta Tags -->
+    <title>Whitepaper</title>
+    <meta name="title" content="Whitepaper">
+    <meta name="description" content="Cryptstarter is a decentralized blockchain built to help startups access the new technology revolution and raise funds from our community." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/whitepaper/">
+    <meta property="og:title" content="Whitepaper">
+    <meta property="og:description" content="Cryptstarter is a decentralized blockchain built to help startups access the new technology revolution and raise funds from our community.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/whitepaper/">
+    <meta property="twitter:title" content="Whitepaper">
+    <meta property="twitter:description" content="Cryptstarter is a decentralized blockchain built to help startups access the new technology revolution and raise funds from our community.">
+    
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="/resources/css/retype.css?v=1.10.690228766552" rel="stylesheet" data-turbo-track="reload" />
+
+    <script type="text/javascript" src="/resources/js/config.js?v=1.10.690228766552" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+</head>
+    <body>
+        <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+    <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+
+    <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+    <div class="container relative flex items-center justify-between flex-grow pr-6 md:justify-start">
+        <!-- Mobile menu button skeleton -->
+        <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+        <div v-cloak id="docs-sidebar-toggle"></div>
+
+        <!-- Logo -->
+        <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center px-2 md:px-6">
+                <a id="docs-site-logo" href="/" class="flex items-center leading-snug text-2xl">
+                    <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Project Name</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+            </div>
+
+            <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+        </div>
+
+        <div class="flex justify-between md:flex-grow">
+            <!-- Top Nav -->
+            <nav class="hidden md:flex">
+    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://retype.com/guides/getting-started/">Getting Started</a>
+        </li>
+    </ul>
+</nav>
+
+            <!-- Header Right Skeleton -->
+            <div v-cloak class="flex justify-end flex-grow skeleton">
+
+                <!-- Search input mock -->
+                <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                    <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                    </div>
+
+                    <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs" />
+                </div>
+
+                <!-- Mobile search button mock -->
+                <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                </div>
+
+                <!-- Dark mode switch placehokder -->
+                <div class="w-10 h-10 lg:ml-2"></div>
+
+                <!-- History button mock -->
+                <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                </div>
+            </div>
+
+            <div v-cloak class="flex items-center justify-end flex-grow">
+                <div id="docs-mobile-search-button"></div>
+                <doc-search-desktop></doc-search-desktop>
+
+                <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                <doc-history></doc-history>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+<div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+
+    <!-- Render this div, if config.showSidebarFilter is `true` -->
+    <div class="flex items-center h-16 px-6">
+        <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+    </div>
+
+    <div class="pl-6 mb-4 mt-1">
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+    </div>
+
+    <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
+        <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+    </div>
+</div>
+
+<!-- Sidebar component -->
+<doc-sidebar v-cloak>
+    <template #sidebar-footer>
+        <div
+            class="flex-shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650"
+        >
+
+            <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                <nav>
+                    <ul class="flex flex-wrap justify-center items-center">
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://retype.com/guides/getting-started/">Getting Started</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+        </div>
+    </template>
+</doc-sidebar>
+
+
+        <div class="flex-grow min-w-0 dark:bg-dark-850">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+            <div class="flex">
+    <div class="flex-grow min-w-0 px-6 md:px-16">
+        <main class="relative pt-6 pb-16">
+            <div class="docs-markdown" id="docs-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="docs-sidebar-right-toggle"></div>
+               
+                <!-- Page content  -->
+<doc-anchor-target id="whitepaper" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#whitepaper">#</doc-anchor-trigger>
+        <span>Whitepaper</span>
+    </h1>
+</doc-anchor-target>
+<doc-anchor-target id="what-is-blockchain">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-blockchain">#</doc-anchor-trigger>
+        <span>What is blockchain</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="what-is-crypstarter">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-crypstarter">#</doc-anchor-trigger>
+        <span>What is Crypstarter</span>
+    </h2>
+</doc-anchor-target>
+<p>Cryptstarter is a decentralized blockchain built to help startups access the new technology revolution and raise funds from our community.</p>
+<p>Based on Proof-of-Stake technology, Crypstarter uses cutting-edge technology to provide unparalleled security and durability to decentralized applications, systems, and communities.</p>
+<p>According to Cryptstarter, interoperable blockchain technology makes the global economy stronger through decentralization, accountability through transparency, and efficiency through programmable value. We also provide a user-friendly environment that allows businesses to access blockchain technology as well as grow and raise funds from our community.</p>
+<p>Not only stopping at building an ecosystem with blockchain applications into individual business models of projects, but Crypstarter is also developed with the goal of creating a highly interconnected open economy in its Ecosystem, where all the participants can get profit through their contribution.</p>
+<p>From the above needs, Crypstarter officially launched the concept of Proof of Investment (POI) for the first time. This is one of the brand new core values ​​of Crypstarter Blockchain in particular and blockchain technology in general.</p>
+<p>Proof Of Investment will be a concept throughout the operating structure of Crypstarter Tokenomics and will soon become a pioneering new technology in blockchain technology. It will be a breakthrough solution for financial related applications in the future.</p>
+<doc-anchor-target id="technology-behind-cst-blockchain">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#technology-behind-cst-blockchain">#</doc-anchor-trigger>
+        <span>Technology behind CST blockchain</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="overall-architecture">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#overall-architecture">#</doc-anchor-trigger>
+        <span>Overall Architecture</span>
+    </h3>
+</doc-anchor-target>
+<p>Our blockchain, built with the Cosmos SDK on top of the consensus engine Tendermint, is an application-specific blockchain, as opposed to another popular type of virtual-machine blockchain with Ethereum as one the most prominent examples.
+In a virtual-machine blockchain, the development revolves around building a decentralized application on top of an existing blockchain as a set of smart contracts. While smart contracts can be a good fit for use cases such as single-use applications (e.g., ICOs,) they often fall short for building complex decentralized platforms due to its limitations in terms of flexibility, sovereignty and performance.
+On the other hand, application-specific blockchains offer a radically different development paradigm where a blockchain could be customized to operate a single application. Developers have all the freedom to make design decisions required for the application to run optimally. In addition, they can easily extend the application’s complexity with modules while not sacrificing sovereignty, security or performance.
+<figure class="content-center">
+    <img src="./static/architecture.png" alt="Blockchain architecture (courtersy Tendermint Inc.)" />
+    <figcaption class="caption">Blockchain architecture (courtersy Tendermint Inc.)</figcaption>
+</figure>
+At its core, a blockchain is a replicated deterministic state machine. A state machine is a computer science concept whereby a machine can have multiple states, but only one at any given time. In a blockchain context, the state machine is deterministic, i.e., if a node is started at a given state and replays the same sequence of transactions, it will always end up with the same final state. The Cosmos SDK gives developers maximum flexibility to define the state of their application, transaction types and state transition functions. To replicate the state machine implemented with Cosmos SDK over the network, we use Tendermint. Tendermint is an application-agnostic engine that is responsible for handling the networking and consensus layers of a blockchain. In practice, this means that Tendermint is responsible for propagating and ordering transaction bytes. The interface for message exchange between Tendermint and the application is called the Application Blockchain Interface (ABCI.) It consists of a set of methods, each with a corresponding Request and Response message type.</p>
+<doc-anchor-target id="cosmos-sdk">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cosmos-sdk">#</doc-anchor-trigger>
+        <span>Cosmos SDK</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="what-is-cosmos-sdk">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-cosmos-sdk">#</doc-anchor-trigger>
+        <span>What is Cosmos SDK?</span>
+    </h4>
+</doc-anchor-target>
+<p>The Cosmos SDK is the most advanced framework for building custom application-specific blockchains today. It is open source and designed to build blockchains out of composable modules with ease. At its core, the Cosmos SDK is a boilerplate implementation of the ABCI in Golang. It comes with a multistore to persist data and a router to handle transactions. An application built on top of the Cosmos SDK handles transactions from Tendermint via the DeliverTx method of the ABCI in four steps:</p>
+<ol>
+<li>Decode transactions received from the Tendermint consensus engine</li>
+<li>Extract messages from transactions and do basic sanity checks</li>
+<li>Route each message to the appropriate module so that it can be processed</li>
+<li>Commit state changes</li>
+</ol>
+<doc-anchor-target id="main-components-of-the-cosmos-sdk">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#main-components-of-the-cosmos-sdk">#</doc-anchor-trigger>
+        <span>Main components of the Cosmos SDK</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="baseapp">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#baseapp">#</doc-anchor-trigger>
+        <span><code v-pre>baseapp</code></span>
+    </h5>
+</doc-anchor-target>
+<p>Like other Comos SDK applications, our blockchain extends from the baseapp, which is the boilerplate implementation of a Cosmos SDK application. It comes with an implementation of the ABCI to handle the connection with the underlying consensus engine. The goal of baseapp is to provide a secure interface between the store and textensible state machine while defining as little about the state machine as possible.</p>
+<doc-anchor-target id="multistore">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#multistore">#</doc-anchor-trigger>
+        <span>Multistore</span>
+    </h5>
+</doc-anchor-target>
+<p>The Cosmos SDK provides a multistore for persisting state. The multistore allows developers to declare any number of KVStores. These KVStores only accept the []byte type as value and therefore any custom structure needs to be marshalled using a codec before being stored.
+The Multistore abstraction is used to divide the state in distinct compartments, each managed by its own module.</p>
+<doc-anchor-target id="modules">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#modules">#</doc-anchor-trigger>
+        <span>Modules</span>
+    </h5>
+</doc-anchor-target>
+<p>Cosmos SDK applications are built by aggregating a collection of interoperable modules. Each module defines a subset of the state and contains its own message/transaction processor, while the Cosmos SDK is responsible for routing each message to its respective module.
+Each module can be seen as a little state-machine. Developers need to define the subset of the state handled by the module, as well as custom message types that modify the state. In general, each module declares its own KVStore in the multistore to persist the subset of the state it defines and developers can leverage on 3rd party modules when building their own modules.</p>
+<doc-anchor-target id="tendermint">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tendermint">#</doc-anchor-trigger>
+        <span>Tendermint</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="what-is-tendermint">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-tendermint">#</doc-anchor-trigger>
+        <span>What is Tendermint</span>
+    </h4>
+</doc-anchor-target>
+<p>Tendermint is software for securely and consistently replicating an application on many machines. By securely, it means Tendermint works even if up to ⅓ of machines fail in arbitrary ways. By consistently, it means that every non-faulty machine sees the same transaction log and computes the same state. Secure and consistent replication is a fundamental problem in distributed systems; it plays a critical role in the fault tolerance of a broad range of applications, from currencies, to elections, to infrastructure or orchestration, and beyond.
+Tendermint consists of two chief technical components: a blockchain consensus engine and a generic application interface. The consensus engine, called Tendermint Core, ensures that the same transactions are recorded on every machine in the same order. The application interface, ABCI, enables the transactions to be processed in any programming language. Unlike other blockchain and consensus solutions, which come pre-packaged with built in state machines, developers can use Tendermint for BFT state machine replication of applications written in whatever programming language and development environment is right for them.</p>
+<doc-anchor-target id="how-it-works">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-it-works">#</doc-anchor-trigger>
+        <span>How it works</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="consensus">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#consensus">#</doc-anchor-trigger>
+        <span>Consensus</span>
+    </h5>
+</doc-anchor-target>
+<p>Tendermint implements a BFT consensus protocol as illustrated in the figure below.
+<figure class="content-center">
+    <img src="media/tendermint_consensus.png" alt="Tendermint's BFT consensus protocol (courtersy Tendermint Inc.)" />
+    <figcaption class="caption">Tendermint&#x27;s BFT consensus protocol (courtersy Tendermint Inc.)</figcaption>
+</figure>
+Participants in the protocol are called validators; they take turns proposing blocks of transactions and voting on them. Blocks are committed in a chain, with one block at each height. A block may fail to be committed, in which case the protocol moves to the next round, and a new validator gets to propose a block for that height. Two stages of voting, namely pre-vote and pre-commit, are required to successfully commit a block. A block is committed when more than ⅔ of validators pre-commit for the same block in the same round.</p>
+<p>Validators may fail to commit a block for a number of reasons; the current proposer may be offline, or the network may be slow. Tendermint allows them to establish that a validator should be skipped. Validators wait a small amount of time to receive a complete proposal block from the proposer before voting to move to the next round. This reliance on a timeout is what makes Tendermint a weakly synchronous protocol, rather than an asynchronous one. However, the rest of the protocol is asynchronous, and validators only make progress after hearing from more than two-thrids of the validator set. A simplifying element of Tendermint is that it uses the same mechanism to commit a block as it does to skip to the next round.</p>
+<p>Assuming less than one-third of the validators are Byzantine, Tendermint guarantees that safety will never be violated - that is, validators will never commit conflicting blocks at the same height. To do this it introduces a few locking rules which modulate which paths can be followed in the flow diagram. Once a validator pre-commits a block, it is locked on that block. It must pre-vote for the block and can only unlock and pre-commit for a new block if there is a two-third consensus for that block in a later round.</p>
+<doc-anchor-target id="stake">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#stake">#</doc-anchor-trigger>
+        <span>Stake</span>
+    </h5>
+</doc-anchor-target>
+<p>In many systems, not all validators will have the same “weight” in the consensus protocol. Thus, we are not so much interested in one-third or two-thirds of the validators, but in those proportions of the total voting power, which may not be uniformly distributed across individual validators.</p>
+<p>Since Tendermint can replicate arbitrary applications, it is possible to define a currency, and denominate the voting power in that currency. When voting power is denominated in a native currency, the system is often referred to as Proof-of-Stake. Validators can be forced, by logic in the application, to “bond” their currency holdings in a security deposit that can be destroyed if they’re found to misbehave in the consensus protocol. This adds an economic element to the security of the protocol, allowing one to quantify the cost of violating the assumption that less than one-third of voting power is Byzantine.</p>
+<doc-anchor-target id="proof-of-investment">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#proof-of-investment">#</doc-anchor-trigger>
+        <span>Proof Of Investment</span>
+    </h2>
+</doc-anchor-target>
+<p>Blockchain technology is developing very strongly in recent years. Derived from Bitcoin&#x27;s Proof of Work technology, through many upgrades to meet the expanding needs of both system and applicability, new technologies, in turn, bring practical applications Much more practical, optimal, and efficient like Proof of Stake, Proof of Authority... This helps blockchain technology gradually become necessary and bring more practical applications.</p>
+<p>Cryptstarter Blockchain is a platform that allows creating an open economy on its own structure. Unlike other projects that apply blockchain technology to a business model or solve a separate problem. Cryptstarter pursues the vision of creating an ecosystem with multiple economic models that work in sync. To achieve this, we are developing a completely new concept, <strong>Proof of Investment (POI)</strong> technology.</p>
+<doc-anchor-target id="what-is-poi">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-poi">#</doc-anchor-trigger>
+        <span>What is POI?</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="what-is-crypstarter-tokenomics">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-crypstarter-tokenomics">#</doc-anchor-trigger>
+        <span>What is Crypstarter tokenomics?</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="what-is-cst-2nd-market">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-cst-2nd-market">#</doc-anchor-trigger>
+        <span>What is CST 2nd market?</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="crypstarter-participants">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#crypstarter-participants">#</doc-anchor-trigger>
+        <span>Crypstarter participants</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="investors">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#investors">#</doc-anchor-trigger>
+        <span>Investors</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="lead-investor">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lead-investor">#</doc-anchor-trigger>
+        <span>Lead Investor</span>
+    </h4>
+</doc-anchor-target>
+<p>Lead investors are experts in the field of investment or venture capital funds. Lead investors will play a leading role in the evaluation and analysis of projects submitted to the Crypstarter Crowdfunding platform.</p>
+<doc-anchor-target id="retail-investor">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retail-investor">#</doc-anchor-trigger>
+        <span>Retail Investor</span>
+    </h4>
+</doc-anchor-target>
+<p>Retail investors are participants who buy and hold CST token and use it to invest in projects listed on the CST crowdfunding platform.</p>
+<doc-anchor-target id="startupsbusiness-owners">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#startupsbusiness-owners">#</doc-anchor-trigger>
+        <span>Startups/business owners</span>
+    </h4>
+</doc-anchor-target>
+<p>The creators of featured projects on our platform. They are startups or business owners and have a common need to apply blockchain technology to their business model and seek capital from the community to develop their products.</p>
+<doc-anchor-target id="service-providers">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#service-providers">#</doc-anchor-trigger>
+        <span>Service providers</span>
+    </h4>
+</doc-anchor-target>
+<p>They are experts in many fields such as lawyers, business consultants, advisors, auditors, etc., have activities on the system and contribute to projects when necessary and will be rewarded with CSTA from Crypstarter platform.</p>
+<doc-anchor-target id="crypstarter-community">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#crypstarter-community">#</doc-anchor-trigger>
+        <span>Crypstarter community</span>
+    </h4>
+</doc-anchor-target>
+<p>They are the community of CST token holders. They can participate in activities and projects on the Crypstarter Network platform through voting through the DAO mechanism. They can receive additional rewards as CSTA through staking CST Token or become a Service provider and receive rewards from the system.</p>
+<doc-anchor-target id="crypstarter-coin">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#crypstarter-coin">#</doc-anchor-trigger>
+        <span>Crypstarter coin</span>
+    </h2>
+</doc-anchor-target>
+<p>To take full advantage of blockchain technology application and meet the structure of Crypstarter Tokenomics, Crypstarter develops dual coin mechanism including CST (BEP20 Token) and CSTA (Native Token). This mechanism helps the system operate with the highest logic while bringing maximum benefits to all parties on the Crypstarter Network.
+While CST is considered the &quot;money&quot; of Crypstarter and the most liquid for its holders, CSTA is seen as the &quot;energy&quot; of the Crypstarter Ecosystem.</p>
+<doc-anchor-target id="crypstarter-native-token---csta">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#crypstarter-native-token---csta">#</doc-anchor-trigger>
+        <span>Crypstarter Native Token - CSTA</span>
+    </h3>
+</doc-anchor-target>
+<p>CSTA is a Native token generated from the Crypstarter Blockchain itself and is considered the &quot;energy&quot; of the Crypstarter Ecosystem. CSTA is a coin used to pay transaction fees, rewards for staking CST Tokens, or contributions by participants in the Crypstarter Ecosystem. CSTA does not limit the maximum power supply and will always be burned to ensure transparent features and a solid system.</p>
+<doc-anchor-target id="crypstarter-bep20-token---cst">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#crypstarter-bep20-token---cst">#</doc-anchor-trigger>
+        <span>Crypstarter BEP20 Token - CST</span>
+    </h3>
+</doc-anchor-target>
+<p>In order to globalize our project and provide the highest liquidity for Crypstarter coin holders, we create CST on Binance Smart Chain. CST is considered as the &quot;Money&quot; of the Crypstarter ecosystem</p>
+<doc-anchor-target id="crypstarter-ecosystem">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#crypstarter-ecosystem">#</doc-anchor-trigger>
+        <span>Crypstarter Ecosystem</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="crypstarter-tokenomics">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#crypstarter-tokenomics">#</doc-anchor-trigger>
+        <span>Crypstarter Tokenomics</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="fundraising-platform">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#fundraising-platform">#</doc-anchor-trigger>
+        <span>Fundraising Platform</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="crowfunding-platform-for-pre-seed-round">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#crowfunding-platform-for-pre-seed-round">#</doc-anchor-trigger>
+        <span>Crowfunding Platform for Pre-seed round</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="crypstarter-ido-launchpad">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#crypstarter-ido-launchpad">#</doc-anchor-trigger>
+        <span>Crypstarter IDO Launchpad</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="startup-fundraising-process">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#startup-fundraising-process">#</doc-anchor-trigger>
+        <span>Startup Fundraising Process</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="our-vision">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#our-vision">#</doc-anchor-trigger>
+        <span>Our Vision</span>
+    </h4>
+</doc-anchor-target>
+<p>We believe that by allowing everyone, regardless of background, to enter the realm of high technology, we are giving individuals all around the world a fresh chance. Experts at Crypstarter aim high on a wide range of topics, respecting democratization and grassroots effort.</p>
+<doc-anchor-target id="project-approval">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#project-approval">#</doc-anchor-trigger>
+        <span>Project Approval</span>
+    </h4>
+</doc-anchor-target>
+<p>Crypstarter has two mechanisms for project approval</p>
+<ol>
+<li>The project is appraised and evaluated by the Lead Investors (who are the leading investors in the industry with expertise in appraisal), they will be the direct investors in the project with a large proportion. Once approved, the project will be proposed on the Cryptstarter Platform.</li>
+<li>The project is voted by Cryptstarter community by using their Governence tokens. If 51% positive votes will be announced on the Cryptstarter Platform.</li>
+</ol>
+<doc-anchor-target id="fundraising-project-requirements">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#fundraising-project-requirements">#</doc-anchor-trigger>
+        <span>Fundraising Project Requirements</span>
+    </h4>
+</doc-anchor-target>
+<p>Each fundraising project should include these categories</p>
+<ol>
+<li>Pitch deck (pdf for Investors),</li>
+<li>Business model,</li>
+<li>The project’s main goals and pain points to be solved,</li>
+<li>Team profile, roadmap, partners,</li>
+<li>Necessary marketing documentations,</li>
+<li>Videos, necessary links,</li>
+<li>Investment return conditions,</li>
+<li>The name of the project and token name,</li>
+<li>The start and end date of the Cryptstarter funding,</li>
+<li>The Amount of money need to be raise, also in tokens with details of Soft Cap and Hard Cap target</li>
+<li>Information on the number of emitted tokens and the percentage of them being up for sale</li>
+</ol>
+<doc-anchor-target id="project-token">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#project-token">#</doc-anchor-trigger>
+        <span>Project Token</span>
+    </h4>
+</doc-anchor-target>
+<p>Startups are required to initialize their Token in order to participate in Cryptstarter&#x27;s fundraising platform. Their Project Token will be used to exchange with CST provided by Investors. Tokens can be easily generated on the Cryptstarter Platform with no blockchain knowledge required.</p>
+<doc-anchor-target id="what-are-the-project-ideas-we-want">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-are-the-project-ideas-we-want">#</doc-anchor-trigger>
+        <span>What are the project ideas we want?</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="blockchain-technologies">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blockchain-technologies">#</doc-anchor-trigger>
+        <span>Blockchain Technologies</span>
+    </h4>
+</doc-anchor-target>
+<p>Blockchain is the future of the world&#x27;s technology, we always welcome more startups joining this industry</p>
+<doc-anchor-target id="nft---metaverse-project">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nft---metaverse-project">#</doc-anchor-trigger>
+        <span>NFT - Metaverse Project</span>
+    </h4>
+</doc-anchor-target>
+<p>Metaverse and NFT are becoming the leading trends in the technology field at present and in the future. Startups participating in development in this area will always be welcome</p>
+<doc-anchor-target id="impac-investing">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#impac-investing">#</doc-anchor-trigger>
+        <span>Impac Investing</span>
+    </h4>
+</doc-anchor-target>
+<p>We want to create a platform to help investors support startups in areas that have a positive impact on quality of life, environment, and society.</p>
+<doc-anchor-target id="green-tech---sustainability">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#green-tech---sustainability">#</doc-anchor-trigger>
+        <span>Green tech - Sustainability</span>
+    </h4>
+</doc-anchor-target>
+<p>Cryptstarter aims to protect the environment and conserve natural resources. Green-tech &amp; sustainability projects are always our top priority</p>
+<doc-anchor-target id="investment-process">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#investment-process">#</doc-anchor-trigger>
+        <span>Investment Process</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="investment-process-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#investment-process-1">#</doc-anchor-trigger>
+        <span>Investment Process</span>
+    </h4>
+</doc-anchor-target>
+<ol>
+<li>Registration on crypstarter.io</li>
+<li>Purchase CST Token and send those to a digital Crypstarter wallet to stake for a necessary period</li>
+<li>Choose the project listed on the Crypstarter Platform</li>
+<li>Exchange CST Token for the project&#x27;s token of your choosing.</li>
+<li>Accept the agreement with the Startups when exchanging Crypstarter Coin on</li>
+<li>Investor will receive three benefits from the Startup
+<ol type="a">
+<li>The company share</li>
+<li>The project tokens</li>
+<li>The proof of investment</li>
+</ol>
+</li>
+</ol>
+<doc-anchor-target id="co-investment-method">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#co-investment-method">#</doc-anchor-trigger>
+        <span>Co-investment method</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="the-idea">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#the-idea">#</doc-anchor-trigger>
+        <span>The idea</span>
+    </h5>
+</doc-anchor-target>
+<p>Cryptstarter is the first platform that creates a co-investment system that includes an investment relationship between three parties, Startups - Lead Investors - Retail investors. When the project is appraised and invested by the Main Investor from the beginning with a minimum rate of 20%, the Retail Investor can copy the strategy for a fee to mainstream investors. Thereby, startups can access community capital more easily and transparently.
+The difference of Cryptstarter is that it allows Startups to issue Cryptocurrencies for their own project based on its Blockchain and managed by a fully-featured Smart contract like the Ethereum network. This allows investors to receive more direct economic benefits when the project&#x27;s Token increases in price and also gives Startups more flexibility in raising capital through the sale of their Project Token.</p>
+<doc-anchor-target id="how-it-works-1">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-it-works-1">#</doc-anchor-trigger>
+        <span>How it works?</span>
+    </h5>
+</doc-anchor-target>
+<ol>
+<li><strong>Project appraiser</strong>: Lead investors are our project appraisers of Crypstarter. Not only giving professional opinions, but they are also the ones who make investment decisions with a minimum rate of 20%. That&#x27;s why any project they are invested in is more reliable than others.</li>
+<li><strong>Project listing</strong>: Project appraised by Lead Investors will be featured on their portfolio page on our platform as well as especially recommended on the Crypstarter Platform. Retail investors can choose the project they want and join our special co-investment program.</li>
+<li><strong>Co-investment Method</strong>: Leading investors share their investment strategies and reports on the projects they have chosen. Not everyone knows how to do Due Diligence on a project in a professional and precise way. This solution helps Retail Investors use their investment in a safer way.</li>
+<li><strong>Fee Agreement</strong>: Projects that were shared and invested by Lead Investors will allow Retail Investors to participate in the co-investment model easily. In return, both can agree on a suitable fee. We provides a simple and transparent way through our blockchain technology.</li>
+</ol>
+<doc-anchor-target id="community-activity-rewards">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#community-activity-rewards">#</doc-anchor-trigger>
+        <span>Community Activity Rewards</span>
+    </h4>
+</doc-anchor-target>
+<ol>
+<li>With the vision of creating a platform where all participants can get rewards, Cryptstarter offers Community Activity Rewards program to all CST Holders for contributing and operating on the platform. The system includes:
+<ol type="a">
+<li>Voting to approve the project</li>
+<li>Proposed system changes</li>
+</ol>
+</li>
+<li>Activities on the platform will receive a reward of xxx CSTA and be transferred directly to the CST Wallet registered on the system.</li>
+</ol>
+<doc-anchor-target id="service-provider-rewards">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#service-provider-rewards">#</doc-anchor-trigger>
+        <span>Service Provider Rewards</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="the-concept">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#the-concept">#</doc-anchor-trigger>
+        <span>The concept</span>
+    </h5>
+</doc-anchor-target>
+<p>Cryptstarter introduces the concept of creating an open economy on its ecosystem, this is an opportunity for many parties to receive economic benefits when participating in supporting projects and receiving Project Token rewards, as well as part The reward is CST Token from Cryptstarter&#x27;s system.</p>
+<doc-anchor-target id="service-providers-participating-in-the-system-include">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#service-providers-participating-in-the-system-include">#</doc-anchor-trigger>
+        <span>Service providers participating in the system include</span>
+    </h5>
+</doc-anchor-target>
+<ol type="a">
+<li>Lawyer</li>
+<li>Digital marketing</li>
+<li>Graphics &amp; design</li>
+<li>Video &amp; Animation</li>
+<li>Writing &amp; Translation</li>
+<li>Business Operation
+<ol type="i">
+<li>Virtual Assitant</li>
+<li>Accountant</li>
+<li>Business consulting</li>
+</ol>
+</li>
+<li>Programming &amp; Tech
+<ol type="i">
+<li>Web programming</li>
+<li>Mobile application</li>
+<li>Desktop application</li>
+<li>Game development</li>
+<li>Testing</li>
+<li>QA &amp; Review</li>
+</ol>
+</li>
+</ol>
+<doc-anchor-target id="how-it-works-2">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-it-works-2">#</doc-anchor-trigger>
+        <span>How it works?</span>
+    </h5>
+</doc-anchor-target>
+<ol>
+<li><strong>CST Holders</strong>: Before officially registering in the system, the service provider must buy and stake a specified  percentage of CST Token according to the regulations of the system. The system will be divided into Tiers in order, the higher the value of the services, the higher the CST Token ratio required for staking. This is to ensure the quality and seriousness of service providers when participating in projects. Service Provider can be registered as an individual or an Organization/Enterprise</li>
+<li><strong>Service provider ranks</strong>:
+<ol type="a">
+<li><em>Tier 1</em>: Hold or stake from 200,000 - 500,000 CST</li>
+<li><em>Tier 2</em>: Hold or stake from 510,000 - 1,000,000 CST</li>
+<li><em>Tier 3</em>: Hold or stake from 1,010,000 - 5,000,000 CST</li>
+<li><em>Tier 4</em>: Hold or stake from 5,010,000 - 10,000,000 CST</li>
+<li><em>Tier 5</em>: Hold or stake from 10,000,000+ CST</li>
+</ol>
+</li>
+<li>Service registration:
+Service Provider use their CST Staking as a collateral to received the Cryptstarter Service Provider Certification. After that, they can begin support any projects on the Cryptstarter Ecosystem by dealing with the business owner thought Cryptstarter Platform.</li>
+<li>Community voting:
+Service providers that receive good reviews and feedback from the community will receive a reward of CST for their contribution. The bonus will be detailed according to each level. (for example, receiving 100 4 star reviews will receive a reward of 100 CST). The community will also receive rewards as active contributions to the system.</li>
+<li>Perform service:
+After satisfying all the required conditions, the Service provider can choose the appropriate projects to register to provide services at the request of the business owner. Agreements on milestones, fees, payments will be handled through a smart contract. When the service is completed, the Service Provider will receive a reward of CSTA from Cryptstarter and a Project token from the Business owner.</li>
+</ol>
+<doc-anchor-target id="virtual-loan">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#virtual-loan">#</doc-anchor-trigger>
+        <span>Virtual Loan</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="the-concept-1">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#the-concept-1">#</doc-anchor-trigger>
+        <span>The concept</span>
+    </h5>
+</doc-anchor-target>
+<p>Cryptstarter introduces the concept of Virtual Loans for the first time and is seen as an extended benefit exclusively for Investors in the Cryptstarter Fundraising program. This is a special mechanism only available on the Cryptstarter ecosystem, making investment participation for startups extremely safe and attractive for investors.
+Unlike conventional investment models or other crowdfunding platforms, Investors participating in the Cryptostarter ecosystem receive various economic benefits that are not available on other platforms.</p>
+<doc-anchor-target id="how-it-works-3">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-it-works-3">#</doc-anchor-trigger>
+        <span>How it works?</span>
+    </h5>
+</doc-anchor-target>
+<ol>
+<li>After finished their investment, the investor will received the Cryptstarter Investor’s benefit:
+<ul>
+<li>Company&#x27;s share</li>
+<li>Project tokens</li>
+<li>Proof of Investment</li>
+</ul>
+</li>
+<li>The special benefit for becoming an Cryptstarter Investors is you can get a Virtual Loan based on your Project tokens and the Proof of Investment. Basically the investor will receive a CST token virtual loan with a value corresponding to the amount their invested in the startup on the Cryptstarter crowdfunding platform and use it for staking to get more CSTA.</li>
+<li>Investors will not have the right to withdraw, buy, sell or convert virtual loans, it will only be used for staking to receive rewards as CSTA through our staking program.</li>
+<li>The process:
+<ol type="i">
+<li>Investor use their Proof of Investment and Project tokens to lock on our Platform as a collateral.</li>
+<li>Investor register to our Virtual loan program</li>
+<li>Investor receive an amount of CST Token with a value corresponding to the amount they invested</li>
+<li>The CSTA Reward will be sent to the investor’s wallet in a period as requested</li>
+<li>Investors can sell part or all of their project tokens, then their virtual loan will decrease accordingly. All project token sale information will be automatically adjusted in their proof of investment via smart contract.</li>
+<li>Investor will pay the virtual loan’s interest via CST/CSTA. The Virtual loan Interest will be xxxx CSTA</li>
+</ol>
+</li>
+</ol>
+<doc-anchor-target id="secondary-market">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#secondary-market">#</doc-anchor-trigger>
+        <span>Secondary Market</span>
+    </h4>
+</doc-anchor-target>
+
+
+
+
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results />
+            </div>
+
+            
+<nav class="flex mt-14">
+    <div class="w-1/2">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/team/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+            <span>
+                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                <span class="block mt-1">Team</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="w-1/2">
+    </div>
+</nav>
+
+
+        </main>
+
+        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between">
+    <div>
+        <ul class="flex flex-wrap items-center text-sm">
+</ul>
+
+    </div>
+    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2021. All rights reserved.</p>
+</div>
+</footer>
+
+        </div>
+    </div>
+    
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 transform translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:flex-shrink-0 lg:pt-6 lg:transform-none lg:w-56 lg:z-0 md:w-72 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+        </div>
+    </div>
+    
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+        <div id="docs-overlay-target"></div>
+
+        <script>window.__DOCS__ = { "title": "Whitepaper", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    </body>
+</html>
